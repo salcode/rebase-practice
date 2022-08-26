@@ -12,5 +12,5 @@ userInputEl.addEventListener('input', function(event) {
 });
 
 function isPalindrome(value) {
-	return true;
+	return value === [...value].reverse().join('');
 }
