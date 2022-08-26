@@ -22,6 +22,7 @@ function testIsPalindrome() {
     [ 'racecar', true ],
     [ 'RaCecar', true ],
     [ 'car', false ],
+    [ 'a Toyota', true ],
   ].forEach(
     ([str, expected]) => {
       if (expected === isPalindrome(str)) {
