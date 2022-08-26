@@ -12,7 +12,8 @@ userInputEl.addEventListener('input', function(event) {
 });
 
 function isPalindrome(value) {
-  return value === [...value].reverse().join('');
+  const simplifiedStr = value.toLowerCase();
+  return simplifiedStr === [...simplifiedStr].reverse().join('');
 }
 
 function testIsPalindrome() {
