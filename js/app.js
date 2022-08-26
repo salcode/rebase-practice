@@ -19,6 +19,7 @@ function testIsPalindrome() {
   let success = true;
   [
     [ 'racecar', true ],
+    [ 'RaCecar', true ],
     [ 'car', false ],
   ].forEach(
     ([str, expected]) => {
