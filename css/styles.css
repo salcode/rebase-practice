@@ -3,6 +3,10 @@ body {
 	background-color: #eee;
 }
 
+#palindrome-message {
+	color: green;
+}
+
 #maybe-palindrome {
 	font-size: 20px;
 	height: 100px;
