@@ -5,7 +5,9 @@ body {
 
 #palindrome-message {
 	color: green;
+	opacity: 0;
 }
+#palindrome-message.is-palindrome { opacity: 1; }
 
 #maybe-palindrome {
 	font-size: 20px;
