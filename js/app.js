@@ -12,7 +12,7 @@ userInputEl.addEventListener('input', function(event) {
 });
 
 function isPalindrome(value) {
-  const simplifiedStr = value.toLowerCase().replace(/\s/g, '');;
+  const simplifiedStr = value.toLowerCase().replace(/[\s,'\.]/g, '');;
   return simplifiedStr === [...simplifiedStr].reverse().join('');
 }
 
