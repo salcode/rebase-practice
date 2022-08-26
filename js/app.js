@@ -14,3 +14,31 @@ userInputEl.addEventListener('input', function(event) {
 function isPalindrome(value) {
 	return value === [...value].reverse().join('');
 }
+
+function testIsPalindrome() {
+  let success = true;
+  [
+    [ 'racecar', true ],
+    [ 'car', false ],
+  ].forEach(
+    ([str, expected]) => {
+      if (expected === isPalindrome(str)) {
+        console.log(
+          `isPalindrome(${str}) returned ` +
+          (expected ? 'True' : 'False')
+        );
+      } else {
+        console.error(
+          `isPalindrome(${str}) did NOT return ` +
+          (expected ? 'True' : 'False')
+        );
+        success = false;
+      }
+      if (! success) {
+        console.error('Failed');
+      } else {
+        console.log('Success');
+      }
+    }
+  );
+}
