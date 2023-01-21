@@ -5,6 +5,6 @@ userInputEl.addEventListener('input', function(event) {
 	console.log(value);
 });
 
-function isPalindrome(value) {
+function isPalindrome(string) {
 	return true;
 }
